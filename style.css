@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-pink{
+    background-color: #FD3555;
+}
+
+.bg-sky-blue{
+    background-color: #2A86BA;
+}
+
+.bg-dark-blue{
+    background-color: #252E33;
+    
+}
+
+.bg-yellow{
+    background-color: #FFB866;
+}
+
+.bg-pic-1{
+    background-image: url(https://images.pexels.com/photos/8251284/pexels-photo-8251284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.bg-pic-2{
+    background-image: url(https://images.pexels.com/photos/5868667/pexels-photo-5868667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.bg-pic-3{
+    background-image: url(https://images.pexels.com/photos/813465/pexels-photo-813465.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+.bg-pic-4{
+    background-image: url(https://images.pexels.com/photos/3718351/pexels-photo-3718351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    
+}
+
+.slider-container{
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.left-slider {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+.left-slider > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.left-slider h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.right-slider {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease;
+
+}
+
+.right-slider > div{
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+
+button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 10;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    
+}
+
+.button-down{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.button-up{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+button :hover{
+    color: black;
+    transition: 0.1s ease;
+    
+}
+
+
+
+button :focus{
+    outline: none;
+}
+
+.button-down{
+    transform: translateX(-100%);
+}
+
+.button-up{
+    transform: translateY(-100%);
+}
+
+
